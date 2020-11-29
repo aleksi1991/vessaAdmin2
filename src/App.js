@@ -32,14 +32,18 @@ const App = () => {
   return (
     <div className="App">
       <Navigation />
-      <Grid container>
-        <PendingLocations
-          setValidation={setValidation}
-          pendingLocations={pendingLocations}
-          label="Locations to approve"
-          buttonLabel="Validate"
-        />
-        <Locations locations={locations} />
+      <Grid className="container" container spacing={8}>
+        <Grid className="pending" item xs={6} >
+          <PendingLocations
+            setValidation={setValidation}
+            pendingLocations={pendingLocations}
+            label="Locations to approve"
+            buttonLabel="Validate"
+          />
+        </Grid>
+        <Grid className="locations" item xs={6}>
+          <Locations locations={locations} />
+        </Grid>
       </Grid>
     </div>
   );

@@ -1,25 +1,42 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
+
+
 
 const Navigation = () => {
   const styles = {
     container: {
       width: '100%',
       heigth: '20vh',
-      backgroundColor: '#85cad4',
+      backgroundColor: '#80BDC6',
       padding: '5rem',
     },
     login: {
-      // backgroundColor: '#fff',
+      width: '100%',
+      heigth: '20vh',
+      backgroundColor: '#80BDC6',
+      padding: '5rem',
     },
   };
 
   return (
-    <Grid container xs={12}>
-        <Paper item className="navigation-container" style={styles.container}>Hallintanäkymä</Paper>
-        {/* <Paper>Kirjautuminen</Paper> */}
-    </Grid>
+    <div className="navigation-container">
+      <Grid container>
+
+        <Grid item xs={6} style={styles.container}>
+          <div>LOGO</div>
+          <div>Hallintanäkymä</div>
+        </Grid>
+
+        <Grid item xs={6} style={styles.login}>
+          <div>Käyttäjä</div>
+          <Button variant="outlined" color="primary">Kirjaudu ulos</Button>
+
+        </Grid>
+
+      </Grid>
+    </div>
   );
 };
 
