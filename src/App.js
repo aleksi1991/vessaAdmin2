@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import PendingLocations from './components/PendingLocations';
 import Locations from './components/Locations';
+import Map from './components/Map';
 import pendingLocationsService from './services/pendingLocations';
 import locationsService from './services/locations';
 import Grid from '@material-ui/core/Grid';
+
 
 import './App.css';
 
@@ -41,9 +43,15 @@ const App = () => {
             buttonLabel="Validate"
           />
         </Grid>
+        
         <Grid className="locations" item xs={6}>
           <Locations locations={locations} />
         </Grid>
+
+        <Grid className="locations" item xs={6}>
+          <Map/>
+        </Grid>
+
       </Grid>
     </div>
   );

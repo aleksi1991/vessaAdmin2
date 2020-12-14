@@ -16,42 +16,30 @@ const Locations = ({ locations, setValidation }) => {
       padding: '1rem',
       marginBottom: '1rem',
     }
+    
   };
+
 
   return (
     <Grid>
       <Paper style={styles.paper} elevation={3}>
         <div>
           <h2>Hyväksytyt</h2>
+
           <Card style={styles.card} elevation={3}>
             <div>Nimi</div>
-            <Button variant="outlined" color="primary">
-              Muokkaa
-            </Button>
+            <Button variant="outlined" color="primary">Muokkaa</Button>
+            <Button variant="outlined" color="primary">Poista</Button>
           </Card>
-          <Card style={styles.card} elevation={3}>
-            <div>Nimi</div>
-            <Button variant="outlined" color="primary">
-              Muokkaa
-            </Button>
-          </Card>
-          <Card style={styles.card} elevation={3}>
-            <div>Nimi</div>
-            <Button variant="outlined" color="primary">
-              Muokkaa
-            </Button>
-          </Card>
-          <Card style={styles.card} elevation={3}>
-            <div>Nimi</div>
-            <Button variant="outlined" color="primary">
-              Muokkaa
-            </Button>
-          </Card>
+          
+        
         </div>
       </Paper>
     </Grid>
   );
 };
+
+
 
 export default Locations;
 
@@ -62,3 +50,11 @@ export default Locations;
 //     <div style={{ marginRight: '1rem' }}>{location.payable}</div>
 //   </div>
 // ))}
+
+
+// <Card style={styles.card} elevation={3}>
+// <div>Nimi</div>
+// <Button variant="outlined" color="primary">
+//   Muokkaa
+// </Button>
+// </Card>

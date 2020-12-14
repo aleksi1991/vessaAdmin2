@@ -1,7 +1,28 @@
+
+.vessaKartalla {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+.vessatKartalla{
+  height: 60vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
 .container {
-  padding: 4rem;
+  background-image: url(./img/tausta.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 1rem;
   justify-content: space-around;
   display: flex;
+  min-height: 700px;
 }
 
 .pending {
@@ -17,7 +38,6 @@
 }
 
 
-.hyvaksyttavat {
-  border: 1px;
-  border-color: black;
+.kartta {
+  background-image: url(./img/kartta.jpg);
 }
